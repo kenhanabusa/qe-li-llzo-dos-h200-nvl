@@ -20,4 +20,6 @@ Quantum ESPRESSO 7.4.1 on an H200 NVL GPU server.
 4. Convert DOS to energy relative to E_F and plot:
    - `gnuplot plot_li_llzo_dos.gp`
 
-See the blog post on server-gear.com for more detailed explanation.
+See the blog post (Japanese) for a detailed explanation:
+
+https://server-gear.com/blog/post/h200-nvl-li-llzo-dos-quantum-espresso
