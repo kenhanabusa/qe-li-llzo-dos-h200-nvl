@@ -1,0 +1,7 @@
+&dos
+  outdir = './tmp/llzo_relaxed'
+  prefix = 'llzo_relaxed'
+  fildos = 'llzo.dos'
+  Emin   = -30.0, Emax = 30.0, DeltaE = 0.02
+  ngauss = 1, degauss = 0.02
+/

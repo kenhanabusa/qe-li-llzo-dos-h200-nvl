@@ -1,0 +1,28 @@
+&CONTROL
+  calculation = 'scf',
+  prefix      = 'si',
+  pseudo_dir  = './pseudo',
+  outdir      = './tmp'
+/
+&SYSTEM
+  ibrav     = 2,            ! fcc（ダイヤモンド構造）
+  celldm(1) = 10.20,        ! a ≈ 5.43 Å 相当
+  nat       = 2,
+  ntyp      = 1,
+  ecutwfc   = 30.0,
+  ecutrho   = 240.0,
+  occupations = 'smearing',
+  smearing    = 'mp',
+  degauss     = 0.02
+/
+&ELECTRONS
+  conv_thr    = 1.0d-8,
+  mixing_beta = 0.7
+/
+ATOMIC_SPECIES
+  Si  28.086  Si.pbe-n-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+  Si  0.00  0.00  0.00
+  Si  0.25  0.25  0.25
+K_POINTS automatic
+  6 6 6  0 0 0

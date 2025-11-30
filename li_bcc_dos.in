@@ -1,0 +1,5 @@
+&DOS
+    outdir = './tmp/li_bcc'
+    prefix = 'li_bcc'
+    fildos = 'li_bcc.dos'
+/

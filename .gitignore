@@ -1,0 +1,18 @@
+# QE が作る一時ファイル・大きなファイル
+tmp/
+*.tgz
+*.save
+*.xml
+*.wfc*
+*.igk
+*.out
+*.dos
+*.dos.rel
+
+# 画像は基本的に再生成するが、メイン図だけ残したい
+*.png
+!dos_li_vs_llzo_EminusEF.png
+
+# 擬ポテンシャルは再配布しない
+pseudo/*
+!pseudo/README.md

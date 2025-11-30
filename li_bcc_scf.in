@@ -1,0 +1,30 @@
+&CONTROL
+  calculation = 'scf',
+  prefix      = 'li_bcc',
+  outdir      = './tmp/li_bcc',
+  pseudo_dir  = './pseudo',
+  verbosity   = 'low',     ! 出力抑制（k点ごとのバンド一覧を出さない）
+/
+&SYSTEM
+  ibrav    = 3,            ! bcc（原始格子）
+  celldm(1)= 6.345,        ! bohr（今回のSCF実行ログに合わせたalat）
+  nat      = 1,
+  ntyp     = 1,
+  ecutwfc  = 50,
+  ecutrho  = 400,
+  occupations = 'smearing',
+  smearing    = 'mp',
+  degauss     = 0.02,
+/
+&ELECTRONS
+  conv_thr    = 1.0d-10,
+  mixing_beta = 0.7,
+/
+ATOMIC_SPECIES
+Li  6.941  Li.pbe-s-van_ak.UPF
+
+ATOMIC_POSITIONS crystal
+Li  0.000000  0.000000  0.000000
+
+K_POINTS automatic
+12 12 12  0 0 0
